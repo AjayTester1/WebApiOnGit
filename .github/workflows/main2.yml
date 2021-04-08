@@ -9,16 +9,16 @@ env:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
  
     - name: "path "
-      run: cd
+      run: echo `pwd`
       
     - name: "CD into directory"
-      run: cd {{ env.WORKING_DIRECTORY }}
+      run: cd "{{ env.WORKING_DIRECTORY }}"
     
     - name: "path2"
-      run: cd 
+      run: echo `pwd` 
       
