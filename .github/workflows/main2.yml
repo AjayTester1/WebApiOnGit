@@ -17,7 +17,7 @@ jobs:
       run: echo `pwd`
       
     - name: "CD into directory"
-      run: cd "${{ env.WORKING_DIRECTORY }}"
+      run: cd "${{ env.WORKING_DIRECTORY }}" ; echo `pwd`
     
     - name: "path2"
       run: echo `pwd` 
