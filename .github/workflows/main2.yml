@@ -20,6 +20,11 @@ jobs:
       run: | 
         cd "${{ env.WORKING_DIRECTORY }}" 
         echo `pwd`
+        
+    - name: Install Swashbuckle CLI .NET Global Tool
+      run: |
+          echo "hello" 
+          echo "hello2"
     
     - name: "path2"
       run: echo `pwd` 
