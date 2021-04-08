@@ -1,0 +1,24 @@
+name: Build and deploy .NET Core application to windows webapp aatiwarishub-dotnetCore-windows with API Management Service aatiwarishub-apim2
+on:
+  push:
+    branches:
+    - master
+
+env:
+  WORKING_DIRECTORY: WebApiOnGit
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+ 
+    - name: "path "
+      run: cd
+      
+    - name: "CD into directory"
+      run: cd {{ env.WORKING_DIRECTORY }}
+    
+    - name: "path2"
+      run: cd 
+      
